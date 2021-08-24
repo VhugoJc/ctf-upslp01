@@ -35,11 +35,10 @@ const SignUp = () => {
        
         const addNewStudent = async () =>{
            const response = await signUpApi(matricula,password);
-           
-           setId(response.id);
            notification["success"]({
                message: response.message
            })
+           setId(matricula);
         }
         addNewStudent();
         

@@ -1,5 +1,7 @@
 import SignUp from '../pages/SignUp';
 import Home from '../pages/Home';
+import Source from '../pages/Source';
+
 import LayoutBasic from '../layouts/LayoutBasic';
 
 const routes =[
@@ -15,6 +17,10 @@ const routes =[
         },{
             path: "/home",
             component: Home,
+            exact: true
+        },{
+            path: "/source",
+            component: Source,
             exact: true
         }
         ]
