@@ -1,7 +1,7 @@
 import { basePath } from "./config";
 
 export function getSourcesApi(){
-    const url = `${basePath}/source`;
+    const url = `${basePath}/weird`;
     const params ={
         method:"GET"
     }
@@ -12,9 +12,11 @@ export function getSourcesApi(){
         const url = window.URL.createObjectURL(new Blob([blob]));
         const link = document.createElement('a');
         link.href = url;
-        // 4. Force download
-        link.click();
-        // 5. Clean up and remove the link
-        link.parentNode.removeChild(link);
-    })
+        link.setAttribute(
+            'download',
+            `weird.js`,
+          );
+          // 4. Force download
+          link.click();
+         })
 }

@@ -1,1 +1,1 @@
-export const basePath = 'http://localhost:4000/api';
+export const basePath = "https://ctf-upslp-challenge.herokuapp.com/api"

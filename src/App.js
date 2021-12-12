@@ -1,5 +1,7 @@
 import './App.css';
-import {BrowserRouter as Router, Switch,Route} from 'react-router-dom';
+import 'antd/dist/antd.css'
+
+import {HashRouter as Router, Switch,Route} from 'react-router-dom';
 import routes from './config/Routes';
 import AuthProvider from './provider/AuthProvider';
 

@@ -1,6 +1,7 @@
-import SignUp from '../pages/SignUp';
+
 import Home from '../pages/Home';
 import Source from '../pages/Source';
+import Default from '../pages/Default';
 
 import LayoutBasic from '../layouts/LayoutBasic';
 
@@ -10,18 +11,20 @@ const routes =[
         component: LayoutBasic,
       exact: false,
       routes: [
-          {
-          path: "/",
-          component: SignUp,
-          exact: true
-        },{
-            path: "/home",
+         {
+            path: "/",
             component: Home,
             exact: true
         },{
-            path: "/source",
+            path: "/gettheflag",
             component: Source,
             exact: true
+        },{
+            path: "/get-the-flag",
+            component: Source,
+            exact: true
+        },{
+            component: Default
         }
         ]
     }

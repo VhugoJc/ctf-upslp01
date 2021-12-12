@@ -1,13 +1,71 @@
 .App {
-  text-align: center;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: white;
+}
+.title{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #ffff;
+}
+.subtitle{
+  text-align: center;
+}
+.background-app{
+  background-color: black !important;
+  width: 100%;
+  height: 100%;
+}
+p{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.ant-card{
+  background-color: transparent !important;
+  border: transparent !important;
+}
+.ant-list-item-meta-description{
+  color: rgba(255, 255, 255, 0.692) !important;
+}
+.cards-home{
+  width: 50% !important;
+  box-shadow: none !important;
 }
 
+@media only screen and (max-width: 768px) {
+  .cards-home {
+    width: 100% !important;
+  }
+}
+
+h2,h3,h4{
+  color: rgba(255, 255, 255, 0.582) !important;
+}
+.ant-list-split .ant-list-item{
+  border-bottom: transparent !important;
+}
+.ant-list-item-meta-description{
+  color: rgba(255, 255, 255, 0.637);
+}
+a{
+  color: #ffff !important;
+  transition: background-color .5s !important;
+}
+.skulls{
+  display: none;
+}
+
+a:hover{
+
+  background-color: black;
+  background-image: url('/src/assets/img/rainbow-static.webp');
+} 
+
+a:hover + .skulls{
+  display: block;
+}
 .App-header{
   color: white;
 }
@@ -15,23 +73,10 @@
   height: 80px;
   width: 100%;
 }
-.App-card_sign-up{
-  width: 500px;
-  height: 300px;
-}
-
-.ant-card-bordered{
-  border-radius: 10px 10px 10px 10px !important;
-  border-color: transparent !important;
-  background-color: rgba(255, 255, 255, 0.068) !important;
-}
-
-.App-input_sign-up{
-    width: 400px !important;
-    margin-top: 30px!important;
-    margin-bottom: 20px!important;
-}
-
-.home-img_meme{
-  width: 80%;
+.video-background{
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
 }

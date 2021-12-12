@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
 import { Route, Switch } from 'react-router';
 import {ConsoleBanner} from '../components/ConsoleBanner';
-import logo from '../assets/img/logo.PNG';
+
 
 const LayoutBasic = ({routes}) => {
     useEffect(()=>{
         ConsoleBanner();
     },[]);
 
-    return (  
-        <div className="App">
-            <img src={logo} alt='logo'/>
+    return (
+            <div className="App">
             <LoadRouters 
                 routes = {routes}/>
-            <div className="App-footer"/>
+            {//<div className="App-footer"/>
+            }
         </div>
     );
 }
